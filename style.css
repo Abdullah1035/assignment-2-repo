@@ -339,5 +339,12 @@ footer{
     .column-2{
         margin-top: 20px;
     }
+    .join{
+        height: 300px;
+        width: 576px;
+    }
+    .form-box input{
+        width: 300px;
+    }
 
 }
