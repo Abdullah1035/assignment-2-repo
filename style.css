@@ -285,6 +285,9 @@ footer{
 /* mobile responsive started here */
 
 @media screen and (max-width:576px) {
+    .body{
+        max-width: 576;
+    }
     .navbar a:{
         display: none;    
     }
@@ -295,6 +298,7 @@ footer{
         flex-direction: column;
         text-align: center;
         height: auto;
+        width: 576px;
     }
     .banne-img{
         order: 1;
@@ -305,6 +309,10 @@ footer{
         padding: 20px 0 0 0;
         text-align: center;
     }
+    .our-plants{
+        height: auto;
+        width: 576px;
+    }
     .plants-title{
         text-align: center;
     }
@@ -314,6 +322,8 @@ footer{
     .flower-and-plants-lovers{
         flex-direction: column;
         text-align: center;
+        width: 576px;
+        height: auto;
     }
     .flower-lovers{
         
@@ -325,6 +335,10 @@ footer{
     }
     .badge{
         display: none;
+    }
+    .deals{
+        height: auto;
+        width: 576px;
     }
     .deals h1,p{
         text-align: center;
@@ -346,5 +360,17 @@ footer{
     .form-box input{
         width: 300px;
     }
-
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        width: 576px;
+    }
+    .left-side{
+        flex-direction: column;
+    }
+    .middle{
+        flex-direction: column;
+    }
 }
