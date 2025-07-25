@@ -35,7 +35,7 @@ header{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    height: 70px;
+    height:auto;
     align-items: center;
 }
 .nav-links{
@@ -47,20 +47,18 @@ header{
 }
 .nav-item{
     list-style: none;
-    
+   
 }
 .nav-link{
     text-decoration: none;
     gap: 20px;
 }
 
-
-
 .banner{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    height: 460px;
+    height: auto;
     
 }
 .banner-title{
@@ -72,6 +70,7 @@ header{
     width: 50%;
     /* height: 355px; */
     display: block;
+    
 }
 
 /* main style started here */
@@ -115,7 +114,7 @@ header{
 /* flower lover style started here */
 
 .flower-and-plants-lovers{
-    height: 600px;
+    height: 600px; 
     margin-bottom: 100px;
     position: relative;
 }
@@ -126,7 +125,7 @@ header{
 }
 .flower-lovers > img{
     width: 540px;
-    height: 600px;
+    height: auto;
     display: block;
 }
 .flower-lovers-description{
@@ -279,4 +278,66 @@ footer{
 .right-side{
     display: block;
     gap: 10px;
+}
+
+
+
+/* mobile responsive started here */
+
+@media screen and (max-width:576px) {
+    .navbar a:{
+        display: none;    
+    }
+    .navbar a:last-child{
+        display: inline-block;
+    }
+    .banner{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+    .banne-img{
+        order: 1;
+        height: auto;
+    }
+    .banner-title{
+        order: 2;
+        padding: 20px 0 0 0;
+        text-align: center;
+    }
+    .plants-title{
+        text-align: center;
+    }
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flower-and-plants-lovers{
+        flex-direction: column;
+        text-align: center;
+    }
+    .flower-lovers{
+        
+        height: 300px;
+    }
+    .flower-lovers-description{
+        
+        height: 300px;
+    }
+    .badge{
+        display: none;
+    }
+    .deals h1,p{
+        text-align: center;
+    }
+    .deals-img{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .column-1{
+        grid-template-rows: auto;
+    }
+    .column-2{
+        margin-top: 20px;
+    }
+
 }
