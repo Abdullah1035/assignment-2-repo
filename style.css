@@ -1,0 +1,276 @@
+body{
+    /* width: 1140px; */
+    
+}
+/* sheread style */
+
+.join, footer{
+    width: 1440px;
+    border: 1px solid tomato;
+}
+
+.navbar,.banner,.our-plants,.flower-and-plants-lovers, .latest-deals{
+    max-width: 1140px;
+    border: 1px solid tomato;
+    margin: 0 auto;
+}
+.dark-1{
+    color: #252432;
+}
+.dark-2{
+    color: #8987A1;
+}
+.color-3{
+    color: #E95A08;
+}
+section{
+    margin-bottom: 50px;
+}
+
+/* header style */
+header{
+    margin-bottom: 100px;
+} 
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 70px;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.nav-item{
+    list-style: none;
+    
+}
+.nav-link{
+    text-decoration: none;
+    gap: 20px;
+}
+
+
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 460px;
+    
+}
+.banner-title{
+    width: 50%;
+    /* height: 300px; */
+    
+}
+.banne-img{
+    width: 50%;
+    /* height: 355px; */
+    display: block;
+}
+
+/* main style started here */
+
+.our-plants{
+    margin-bottom: 100px;
+}
+.plants-title{
+    text-align: center;
+}
+.card-container{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 20px;
+}
+.flower-card{
+    width: 270px;
+    height: auto;
+    text-align: center;
+}
+.flower-card img{
+    width: 100%;
+    height: auto;
+}
+.flower-card h4{
+    margin: 10px,0,5px;
+}
+.flower-card h3{
+    margin-bottom: 0,0,10px,0;
+    font-size: bold;
+}
+.flower-card button{
+    width: 270px;
+    height: 50px;
+    background-color: #E95A08;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+}
+
+/* flower lover style started here */
+
+.flower-and-plants-lovers{
+    height: 600px;
+    margin-bottom: 100px;
+    position: relative;
+}
+.flower-lovers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flower-lovers > img{
+    width: 540px;
+    height: 600px;
+    display: block;
+}
+.flower-lovers-description{
+    width: 540px;
+    height: 520px;
+}
+.flower-lovers-description h3{
+    font-size: 40px;
+}
+.flower-lovers-description ul li{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.badge{
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+.badge img{
+    height: 100px;
+    width: 100px;
+}
+
+/* latest deals code started here */
+section h1, section p{
+    text-align: center;
+}
+.deals-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1140px;
+    margin: auto;
+    gap: 10px;
+}
+.column-1{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+.img-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.text-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 2rem;
+    background: rgba(0, 0,0, 40%);
+    
+    text-align: center;
+}
+.column-2{
+    height: 100%;
+    gap: 10px;
+}
+  
+
+
+/* join style started here */
+
+.join{
+    background-image: url(./assets/news-letter-bg.png);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.join h2{
+    text-align: center;
+    color: #ffffff;
+    font-size: 36px;
+}
+.form-box{
+    display: flex;
+}
+.form-box input{
+    padding: 10px;
+    flex: 1;
+    width: 500px;
+}
+.form-box button{
+    padding: 10px 20px;
+    background-color: #E95A08;
+    color: #ffffff;
+    border: none;
+}
+
+/* footer started here */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    
+    background-color: #ffffff;
+    padding: 30px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    gap: 10px;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.middle{
+    display: flex;
+    justify-content: space-around
+    align-items: center;
+}
+.middle ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+.middle ul li a{
+    text-decoration: none;
+    
+}
+.right-side{
+    display: block;
+    gap: 10px;
+}
